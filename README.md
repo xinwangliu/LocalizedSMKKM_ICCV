@@ -6,4 +6,4 @@ main function: LocalizedSimpleMKKM_demo.m
 
 datasets: one can generate multiple kernel matrices as the input.
 
-core function: localSimpleMKKM.m
+core function: localizedSimpleMKKM.m

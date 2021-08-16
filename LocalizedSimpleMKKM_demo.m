@@ -44,7 +44,7 @@ for it =1:length(tauset)
 	for i =1:num
 		A(NS(:,i),NS(:,i)) = A(NS(:,i),NS(:,i))+1;
 	end
-	[H_normalized,Sigma(:,it),obj] = localSimpleMKKM(KH,numclass,A,options);
+	[H_normalized,Sigma(:,it),obj] = localizedSimpleMKKM(KH,numclass,A,options);
 	[res_mean(:,it),res_std(:,it)] = myNMIACCV2(H_normalized,Y,numclass);
 end
 timecost = toc;
